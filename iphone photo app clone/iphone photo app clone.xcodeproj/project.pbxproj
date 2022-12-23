@@ -10,13 +10,14 @@
 		4080B0CA29552A8400F73C0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080B0C929552A8400F73C0B /* AppDelegate.swift */; };
 		4080B0D329552A8500F73C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4080B0D229552A8500F73C0B /* Assets.xcassets */; };
 		4080B0D629552A8500F73C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4080B0D429552A8500F73C0B /* LaunchScreen.storyboard */; };
-		4080B0DE29552AE700F73C0B /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080B0DD29552AE700F73C0B /* PhotoGalleryViewController.swift */; };
 		4080B0E729552BE600F73C0B /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080B0E629552BE600F73C0B /* CellModel.swift */; };
 		4080B0E929552C1E00F73C0B /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080B0E829552C1E00F73C0B /* CellData.swift */; };
 		4080B0EB29552C6700F73C0B /* MyAlbumsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080B0EA29552C6700F73C0B /* MyAlbumsCollectionViewCell.swift */; };
 		4080B0ED29552C7700F73C0B /* TypesMediaFilesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080B0EC29552C7700F73C0B /* TypesMediaFilesCollectionViewCell.swift */; };
 		4080B0EF29552C8300F73C0B /* MyAlbumsHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080B0EE29552C8300F73C0B /* MyAlbumsHeaderCollectionReusableView.swift */; };
 		4080B0F129552C8F00F73C0B /* ListHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080B0F029552C8F00F73C0B /* ListHeaderCollectionReusableView.swift */; };
+		4080B0F329552CCF00F73C0B /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080B0F229552CCF00F73C0B /* PhotoGalleryViewController.swift */; };
+		4080B0F529552CEE00F73C0B /* ExtensionPhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080B0F429552CEE00F73C0B /* ExtensionPhotoGalleryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,13 +26,14 @@
 		4080B0D229552A8500F73C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4080B0D529552A8500F73C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4080B0D729552A8500F73C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4080B0DD29552AE700F73C0B /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
 		4080B0E629552BE600F73C0B /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		4080B0E829552C1E00F73C0B /* CellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
 		4080B0EA29552C6700F73C0B /* MyAlbumsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlbumsCollectionViewCell.swift; sourceTree = "<group>"; };
 		4080B0EC29552C7700F73C0B /* TypesMediaFilesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesMediaFilesCollectionViewCell.swift; sourceTree = "<group>"; };
 		4080B0EE29552C8300F73C0B /* MyAlbumsHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlbumsHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		4080B0F029552C8F00F73C0B /* ListHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		4080B0F229552CCF00F73C0B /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
+		4080B0F429552CEE00F73C0B /* ExtensionPhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionPhotoGalleryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,6 @@
 			children = (
 				4080B0E029552B8A00F73C0B /* Resources */,
 				4080B0DF29552B8000F73C0B /* Sources */,
-				4080B0DD29552AE700F73C0B /* PhotoGalleryViewController.swift */,
 			);
 			path = "iphone photo app clone";
 			sourceTree = "<group>";
@@ -111,6 +112,8 @@
 		4080B0E329552BB700F73C0B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4080B0F229552CCF00F73C0B /* PhotoGalleryViewController.swift */,
+				4080B0F429552CEE00F73C0B /* ExtensionPhotoGalleryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,12 +209,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4080B0F129552C8F00F73C0B /* ListHeaderCollectionReusableView.swift in Sources */,
-				4080B0DE29552AE700F73C0B /* PhotoGalleryViewController.swift in Sources */,
 				4080B0EB29552C6700F73C0B /* MyAlbumsCollectionViewCell.swift in Sources */,
 				4080B0CA29552A8400F73C0B /* AppDelegate.swift in Sources */,
 				4080B0E729552BE600F73C0B /* CellModel.swift in Sources */,
 				4080B0EF29552C8300F73C0B /* MyAlbumsHeaderCollectionReusableView.swift in Sources */,
 				4080B0E929552C1E00F73C0B /* CellData.swift in Sources */,
+				4080B0F329552CCF00F73C0B /* PhotoGalleryViewController.swift in Sources */,
+				4080B0F529552CEE00F73C0B /* ExtensionPhotoGalleryViewController.swift in Sources */,
 				4080B0ED29552C7700F73C0B /* TypesMediaFilesCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
