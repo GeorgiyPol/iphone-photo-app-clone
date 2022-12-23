@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		4080B0CA29552A8400F73C0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080B0C929552A8400F73C0B /* AppDelegate.swift */; };
-		4080B0CE29552A8400F73C0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080B0CD29552A8400F73C0B /* ViewController.swift */; };
 		4080B0D329552A8500F73C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4080B0D229552A8500F73C0B /* Assets.xcassets */; };
 		4080B0D629552A8500F73C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4080B0D429552A8500F73C0B /* LaunchScreen.storyboard */; };
 		4080B0DE29552AE700F73C0B /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080B0DD29552AE700F73C0B /* PhotoGalleryViewController.swift */; };
+		4080B0E729552BE600F73C0B /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080B0E629552BE600F73C0B /* CellModel.swift */; };
+		4080B0E929552C1E00F73C0B /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080B0E829552C1E00F73C0B /* CellData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4080B0C629552A8400F73C0B /* iphone photo app clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iphone photo app clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4080B0C929552A8400F73C0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4080B0CD29552A8400F73C0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4080B0D229552A8500F73C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4080B0D529552A8500F73C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4080B0D729552A8500F73C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4080B0DD29552AE700F73C0B /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
+		4080B0E629552BE600F73C0B /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		4080B0E829552C1E00F73C0B /* CellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,71 @@
 		4080B0C829552A8400F73C0B /* iphone photo app clone */ = {
 			isa = PBXGroup;
 			children = (
-				4080B0C929552A8400F73C0B /* AppDelegate.swift */,
-				4080B0CD29552A8400F73C0B /* ViewController.swift */,
+				4080B0E029552B8A00F73C0B /* Resources */,
+				4080B0DF29552B8000F73C0B /* Sources */,
 				4080B0DD29552AE700F73C0B /* PhotoGalleryViewController.swift */,
+			);
+			path = "iphone photo app clone";
+			sourceTree = "<group>";
+		};
+		4080B0DF29552B8000F73C0B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4080B0E229552BAA00F73C0B /* Scenes */,
+				4080B0E129552BA300F73C0B /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4080B0E029552B8A00F73C0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				4080B0D229552A8500F73C0B /* Assets.xcassets */,
 				4080B0D429552A8500F73C0B /* LaunchScreen.storyboard */,
 				4080B0D729552A8500F73C0B /* Info.plist */,
 			);
-			path = "iphone photo app clone";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4080B0E129552BA300F73C0B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4080B0C929552A8400F73C0B /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4080B0E229552BAA00F73C0B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4080B0E429552BBD00F73C0B /* Model */,
+				4080B0E529552BC300F73C0B /* View */,
+				4080B0E329552BB700F73C0B /* Controller */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4080B0E329552BB700F73C0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4080B0E429552BBD00F73C0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4080B0E629552BE600F73C0B /* CellModel.swift */,
+				4080B0E829552C1E00F73C0B /* CellData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4080B0E529552BC300F73C0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +193,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4080B0CE29552A8400F73C0B /* ViewController.swift in Sources */,
 				4080B0DE29552AE700F73C0B /* PhotoGalleryViewController.swift in Sources */,
 				4080B0CA29552A8400F73C0B /* AppDelegate.swift in Sources */,
+				4080B0E729552BE600F73C0B /* CellModel.swift in Sources */,
+				4080B0E929552C1E00F73C0B /* CellData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
